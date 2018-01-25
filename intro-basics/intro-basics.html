@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Intro/Basics</title>
+	<link rel="stylesheet" href="./intro-basics.css">
+    <script src="./intro-basics.js"></script>
+</head>
+<body>
+    <!-- button one is all inline -->
+    <div id="btn1" onclick="alert('hello');">click me</div>
+    <!-- button two separates out into a script tag.
+         typically, better practice to locate in a separate file to avoid html content -->
+    <div id="btn2">click me instead</div>
+    <script>
+        document.getElementById('btn2').addEventListener('click', function() {
+            alert('hello 2');
+        });
+    </script>
+</body>
+</html>
