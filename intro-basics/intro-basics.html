@@ -6,18 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS Intro/Basics</title>
 	<link rel="stylesheet" href="./intro-basics.css">
-    <script src="./intro-basics.js"></script>
 </head>
 <body>
-    <!-- button one is all inline -->
+
+
+    <!-- ALERT BUTTONS: Same Function, Different Approaches -->
+    <!-- Alert Button One is all inline -->
     <div id="btn1" onclick="alert('hello');">click me</div>
-    <!-- button two separates out into a script tag.
-         typically, better practice to locate in a separate file to avoid html content -->
+
+    <!-- Alert Button Two separates out into a script tag, a better practice -->
     <div id="btn2">click me instead</div>
     <script>
         document.getElementById('btn2').addEventListener('click', function() {
             alert('hello 2');
         });
     </script>
+
+    <!-- Alert Button Three actually puts that script into a separate js file.
+         best practice to keep organized without needing to sift through html.
+         bear in mind, the script tag should be placed right before </body> -->
+    <div id="btn3">no, click me</div>
+    <!-- <script src="./intro-basics.js"></script> -->
+
+
+    <!-- COMMENTING: Rules for JS -->
+    <!-- in js only works in js files or in script tags within an html file -->
+    <script>
+        // <- single line commenting
+        /* <- multiple
+                line
+             commenting -> */
+        // HANDY TRICK!! - " command + / " will comment out all highlighted lines
+    </script>
+
+
+    <!-- PROMPT BUTTONS -->
+    <!-- Prompt Button One asks for name -->
+    <div id="btn4">prompt</div>
+
+    <!-- Prompt Button Two asks for, stores, and logs name -->
+    <div id="btn5">prompt and store</div>
+
+    <!-- Prompt Button Three asks for and stores name -->
+    <div id="btn6">submit name</div>
+
+    <!-- Prompt Button Four logs stored name -->
+    <div id="btn7">log to console</div>
+
+
+    <script src="./intro-basics.js"></script>
 </body>
 </html>
