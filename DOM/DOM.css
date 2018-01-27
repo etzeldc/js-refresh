@@ -1,0 +1,17 @@
+.btn {
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: lightgreen;
+}
+
+#btn3 {
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: lightblue;
+}
+
+body {
+    background-color: lightgrey;
+}
