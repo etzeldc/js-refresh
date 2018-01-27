@@ -64,4 +64,23 @@ document.getElementById('btn6').addEventListener('click', function () {
     console.log(myObj);
     f(myObj);
     console.log(myObj);
-});   
+});
+
+// Scope
+var x = 'GLOBAL'; // global variable
+function myLocal() {
+    console.log(x); // will show as undefined because...
+    var x = 'LOCAL'; // using "var" declares x as this value for this function
+    console.log(x);
+}
+function myGlobal() {
+    console.log(x); // will show original value
+    x = 'LOCAL'; // changes the original value
+    console.log(x);
+}
+document.getElementById('btn7').addEventListener('click', function () {
+    console.log(x);
+    myLocal();
+    console.log(x);
+    myGlobal();
+});
